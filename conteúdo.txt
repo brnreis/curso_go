@@ -1,0 +1,74 @@
+VARIÁVEIS:
+var ->> Variável
+    Declara uma variável (mutável)
+const ->> Constante 
+    Declara uma constante (imutável)
+
+
+
+TIPOS DE DADOS:
+int ->> Inteiro
+    Existem 4 tipos de numeros inteiros (8, 16, 32, 64). A diferença é o numero de bits que eles ocupam, ou seja, a qtd de numeros que ele suporta. Também suporta números negativos.
+
+uint ->> Unsigned int
+    Existem 4 tipos de uint (8, 16, 32, 64). É um inteiro sem sinal.
+
+float ->> Número real (quebrados)
+    Existem 2 tipos de numeros float (32, 64). Suportam números quebrados.
+
+str ->> String
+    Tem que usar aspas duplas.
+
+bool ->> Booleano
+    True ou false
+
+error ->> Error 
+    No Golang error é um tipo de dado. Existe um pacote chamado "errors" para eu nomear um dado do tipo erro. Esse tipo é muito usado na linguagem. 
+
+Observações:
+    -Todo tipo de dado tem um valor inicial. Para string é uma string em branco, para números é o número zero. Para erro é 'nil', para booleano é false.
+    -Existem apelidos (alias) para alguns tipos de dados:
+        int32 = rune
+        uint8 = byte
+
+
+
+FUNÇÕES:
+    -Funções também são tipos de dados, ou seja, eu posso declarar um dado como uma função.
+    -As funções podem ter mais de um retorno
+
+
+
+OPERADORES:
+Aritméticos tradicionais ->> "+", "-", "/", "*", "%"
+    Mais, menos, dividir, multiplicar, resto da divisão.
+    Não conseguimos fazer operação com dois tipos diferentes (mesmo que sejam dois numeros, se não foram exatamente do mesmo tipo, não conseguimos).
+
+Atribuição ->> "=", ":="
+    O "=" atribui um valor a variável, mas precisamos declarar o tipo
+    O ":=" atribui um valor a variável mas com a inferência de tipo (não preciso declarar e vai ser declarado sozinho)
+
+Relacionais ->> ">", "<", ">=", "<=", "==", "!="
+    Comparadores tradicionais. Retornam true ou false.
+
+Lógicos ->> "&&", "||", "!"
+    O "&&" é equivalente ao "and"
+    O "||" é quivalente ao "or"
+    O "!" é quivalente a uma negação (inverte o booleano, se era true passe a retornar false e vice versa)
+
+Unários ->> "++", "+=", "*=" "/=" "&="
+    O "++" e o "--" soma ou diminui 1 de alguma variavel.
+    Os outros são semelhantes ao python.
+
+
+STRUCT:
+    -Quando tenho mais de uma informação junta no mesmo type.
+    -Os structs coletam diferentes dados e os organizam sob diferentes nomes de campo. Quando você inicializa uma variável com um novo struct, é como se você tivesse feito uma cópia de um formulário e o deixou pronto para preencher as informações necessárias para aquela variável. 
+    -Uma estrutura ou struct em Golang é um tipo definido pelo usuário que permite agrupar/combinar itens de tipos possivelmente diferentes em um único tipo. Elas podem ser comparadas a Classes que encontramos em linguagens orientadas a objeto.
+
+
+HERANÇA FAKE:
+    -Podemos chamar um struct dentro de outro struct(sem definir type). Essa ação chama todos os atributos do struct anterior para o novo.
+
+
+
